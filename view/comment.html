@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html class="fully">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/tron.css">
+<script type="text/javascript" src="../js/cfg.js"></script>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body id="body" class="fully">
+<div class="container fully" id="container">
+	<div class="titleimg">
+		<img src="../img/4.jpg">
+	</div>
+	<div class="head" style="margin-top:0;">热门评论</div>
+	<a class="return" href="./brief.html" style="top:55px;">[返回]</a>
+	<div class="btime">
+		<div class="ltimel"></div>
+		<span id="totalComment">共182条评论</span>
+		<div class="ltimer"></div>
+	</div>
+	<div class="scroll" id="commentBox" style="top:90px; bottom:50px;"></div>
+	<div class="cbtm">
+		<div class="cfake" id="cfake">我要评论..</div>
+	</div>	
+</div>
+<script type="text/javascript" src="../js/mask.js"></script>
+<script type="text/javascript" src="../js/comment.js"></script>
+<script type="text/javascript">
+$("#cfake").on("click", function(){
+	new Comment(window.cfg);
+});
+</script>
+<script type="text/javascript" src="../js/getComment.js"></script>
+<script type="text/javascript">
+new GetComment(window.cfg);
+</script>
+</body>
+</html>
