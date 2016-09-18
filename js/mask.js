@@ -29,7 +29,7 @@ Mask.prototype = {
 	auto : function(){
 		var self = this;
 		self.flag = setTimeout(function(){
-			self.hide();
+			self.hide(); 
 		}, self.dur);
 	},
 
